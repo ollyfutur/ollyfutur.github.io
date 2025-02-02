@@ -1,0 +1,318 @@
+/* --- Fonts --- */
+
+/* Director */
+@font-face
+{
+    font-family: 'Director';
+    src:url('fonts/Director/Director-Regular.ttf');
+}
+@font-face
+{
+    font-family: 'Director';
+    font-weight: bold;
+    src:url('fonts/Director/Director-Bold.ttf');
+}
+@font-face
+{
+    font-family: 'Director';
+    font-weight: 300; /* Light */
+    src:url('fonts/Director/Director-Light.ttf');
+}
+
+/* Fahkwang */
+@font-face
+{
+    font-family: 'Fahkwang';
+    src:url('fonts/Fahkwang/Fahkwang-Regular.ttf');
+}
+@font-face
+{
+    font-family: 'Fahkwang';
+    font-style: italic;
+    src:url('fonts/Fahkwang/Fahkwang-Italic.ttf');
+}
+@font-face
+{
+    font-family: 'Fahkwang';
+    font-weight: bold;
+    src:url('fonts/Fahkwang/Fahkwang-Bold.ttf');
+}
+@font-face
+{
+    font-family: 'Fahkwang';
+    font-style: italic;
+    font-weight: bold;
+    src:url('fonts/Fahkwang/Fahkwang-BoldItalic.ttf');
+}
+@font-face
+{
+    font-family: 'Fahkwang';
+    font-weight: 300; /* Light */
+    src:url('fonts/Fahkwang/Fahkwang-Light.ttf');
+}
+@font-face
+{
+    font-family: 'Fahkwang';
+    font-style: italic;
+    font-weight: 300; /* Light */
+    src:url('fonts/Fahkwang/Fahkwang-LightItalic.ttf');
+}
+
+/* --- Positionning --- */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a
+{
+    padding-left: 1em;
+    font-family: 'Fahkwang';
+    font-weight: bold;
+}
+
+nav a:hover
+{
+    border-left: solid 2px;
+}
+
+/* body, section, header, nav
+{
+    border: solid 1px red;
+} */
+
+body
+{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20vh;
+
+    font-family: 'Fahkwang', Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+
+    background-image: linear-gradient(rgba(20, 100, 180, 0) 0%, rgba(20, 100, 180, 0.8) 100%),
+        linear-gradient(rgba(200, 120, 180, 0) 0%, rgba(200, 120, 180, 0.5) 100%);
+    background-repeat: repeat-x, repeat-x;
+    background-attachment: fixed, scroll;
+    background-position: bottom, bottom;
+}
+
+header
+{
+    width: 40%;
+    max-width: 600px;
+    float: left;
+    position: sticky;
+    top: 20vh;
+    padding-right: 1em;
+    padding-left: 2em;
+
+    border-right: solid 2px;
+
+    text-align: right;
+}
+
+.nobreak
+{
+    display: inline-block;
+}
+
+body header nav
+{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+}
+
+body:hover header nav
+{
+    max-height: 10em;
+    transition: max-height 0.25s ease-in;
+}
+
+#main
+{
+    min-height: 2em;
+    width: 60%;
+    margin-left: 40%;
+    margin-bottom: 80vh;
+    box-sizing: border-box;
+    padding-right: 2em;
+    padding-left: 1em;
+    text-align: justify;
+}
+
+section
+{
+    margin-bottom: 4em;
+}
+
+section h1
+{
+    font-family: 'Director', serif;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+section p a
+{
+    border-bottom: solid 0px;
+    transition: border-bottom 0.1s ease-in;
+}
+
+section p a:hover
+{
+    border-bottom: solid 2px;
+    transition: border-bottom 0.1s ease-out;
+}
+
+section p, dl
+{
+    margin-bottom: 1em;
+}
+
+section dt, dd
+{
+    display: inline
+}
+
+section dt
+{
+    font-weight: bold;
+}
+
+section dt:before {
+    content: "";
+    display: block;
+}
+
+section dt:after {
+    content: ":";
+}
+
+section .myface {
+    max-width: 20%;
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    border-left: solid 2px;
+    border-right: solid 2px;
+}
+
+section li {
+    padding-left: 1.5em;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 0% 0.2em;
+}
+
+section li a {
+    padding-right: 1em;
+}
+
+section li a:hover {
+    border-right: solid 2px;
+}
+
+section li.article {
+    background-image: url(graphics/icons/article.svg);
+}
+
+section li.email {
+    background-image: url(graphics/icons/email.svg);
+}
+
+section li.email span {
+    visibility: hidden;
+}
+
+section li.email:hover span {
+    visibility: visible;
+    padding-left: 1em;
+    margin-left: 1em;
+    border-left: solid 2px;
+}
+
+
+section li.email span b {
+    display: none;
+}
+
+
+section li.github {
+    background-image: url(graphics/icons/github.svg);
+}
+
+section li.scholar {
+    background-image: url(graphics/icons/scholar.svg);
+}
+
+section li.orcid {
+    background-image: url(graphics/icons/orcid.svg);
+}
+
+section li.researchgate {
+    background-image: url(graphics/icons/researchgate.svg);
+}
+
+section li.bussilab {
+    background-image: url(graphics/icons/bussilab.svg);
+}
+
+section li.soundcloud {
+    background-image: url(graphics/icons/soundcloud.svg);
+}
+
+
+
+@media (max-width: 800px)
+{
+
+    body
+    {
+    }
+
+    header
+    {
+        float: none;
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        margin: auto;
+        border-bottom: solid 1px;
+    }
+
+    section
+    {
+        min-height: 1em;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 80vw;
+        overflow: scroll;
+        border-left: solid 1px;
+    }
+}
+
+header h1
+{
+    font-family: 'Director', serif;
+    font-weight: 300;
+}
+
+.fr_api
+{
+    font-family: 'Noto Serif', 'Times', serif;
+    opacity: 40%;
+}
