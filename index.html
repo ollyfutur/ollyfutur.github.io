@@ -2,47 +2,50 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="test.css" />
         <title>Olivier Languin–Cattoën - Personal Website</title>
         <script src="jquery/jquery-3.6.1.min.js"></script>
     </head>
 
     <body>
+        <header>
+            <h1>Olivier <span class="nobreak">Languin–Cattoën</span></h1>
+            <p>Postdoctoral Researcher</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <!--Navigation bar-->
-        <script id="include_header" src="header.js">
-        </script>
-        <!--end of Navigation bar-->
+        <main>
+            <section id="about">
+                <div class="image">
+                    <img src="graphics/olly.jpg" alt="My face">
+                </div>
 
-        <section id="main">
-            <img src="graphics/olly.jpg" alt="My face" class="myface">
+                <div class="content">
+                    <h1>About</h1>
 
-            <section>
-                <h1 id="about">About</h1>
+                    <dl>
+                        <dt>First name</dt>
+                        <dd>Olivier <a href="https://en.wikipedia.org/wiki/Help:IPA/French" title="French API pronunciation"><span class="fr_api">/olivje/</span></a></dd>
+                        <dt>Last name</dt>
+                        <dd>Languin-Cattoën <a href="https://en.wikipedia.org/wiki/Help:IPA/French" title="French API pronunciation"><span class="fr_api">/lɑ̃gɛ̃ katoɛn/</span></a></dd>
+                        <dt>Age</dt>
+                        <dd><script id="include_age" src="age.js"></script></dd>
+                    </dl>
 
-                <dl>
-                    <dt>First name</dt>
-                    <dd>Olivier <a href="https://en.wikipedia.org/wiki/Help:IPA/French" title="French API pronunciation"><span class="fr_api">/olivje/</span></a></dd>
-                    <dt>Last name</dt>
-                    <dd>Languin-Cattoën <a href="https://en.wikipedia.org/wiki/Help:IPA/French" title="French API pronunciation"><span class="fr_api">/lɑ̃gɛ̃ katoɛn/</span></a></dd>
-                    <dt>Age</dt>
-                    <dd><script id="include_age" src="age.js"></script></dd>
-                </dl>
-
-
-                <p>
-                    I am a postdoctoral researcher in <a href="https://www.bussilab.org" title="Bussilab website">Giovanni Bussi's group</a>, at <a href="https://www.sissa.it/" title="Scuola Internazionale Superiore di Studi Avanzati">SISSA</a>, Trieste, Italy.
-                </p>
-
-                <p>
-                    I am interested in methodological development for the molecular modeling of biological systems, including enhanced sampling techniques for Molecular Dynamics simulations and deep learning.
-                </p>
-
+                    <p>I am a postdoctoral researcher in <a href="https://www.bussilab.org" title="Bussilab website">Giovanni Bussi's group</a>, at <a href="https://www.sissa.it/" title="Scuola Internazionale Superiore di Studi Avanzati">SISSA</a>, Trieste, Italy.</p>
+                    <p>I am interested in methodological development for the molecular modeling of biological systems, including enhanced sampling techniques for Molecular Dynamics simulations and deep learning.</p>
+                </div>
             </section>
 
-            <section>
-                <h1 id="links">Links</h1>
-
+            <section id="links">
+                <h1>Links</h1>
                 <ul>
                     <li class="email">
                         E-mail <span>olanguin@sissa<b>.example</b>.it</span>
@@ -65,38 +68,13 @@
                     <li class="soundcloud">
                         <a href="https://soundcloud.com/olly_futur">SoundCloud</a>
                     </li>
-
+            </section>
+            <section id="publications">
+                <h1>Publications</h1>
+                <ul>
+                    <script id="mybib" src="mybib.js"></script>
                 </ul>
             </section>
-            <section>
-                <h1 id="publications">Publications</h1>
-                <ul>
-                    <li class="article">
-                        <a href="https://doi.org/10.1016/j.bpj.2023.05.029">
-                        Binding site plasticity regulation of the FimH catch-bond mechanism. O. Languin-Cattoën, F. Sterpone, G. Stirnemann. <i>Biophysical Journal</i> 122 (13), 2744—2756.
-                        </a>
-                    </li>
-                    <li class="article">
-                        <a href="https://doi.org/10.1103/PhysRevLett.129.203001">
-                        Explicit models of motion to understand protein side-chain dynamics. N. Bolik-Coulon, O. Languin-Cattoën, D. Carnevale, M. Zachrdla, D. Laage, F. Sterpone, G. Stirnemann, F. Ferrage. <i>Physical Review Letters</i> 129 (20), 203001.
-                        </a>
-                    </li>
-                    <li class="article">
-                        <a href="https://doi.org/10.1021/acs.nanolett.2c00043">
-                        A single-molecule strategy to capture non-native intramolecular and intermolecular protein disulfide bridges. M. Mora, S. Board, O. Languin-Cattoën, L. Masino, G. Stirnemann, S. Garcia-Manyes. <i>Nano Letters</i> 22 (10), 3922—3930.
-                        </a>
-                    </li>
-                    <li class="article">
-                        <a href="https://doi.org/10.3390/polym13223912">
-                        Exposure of von Willebrand factor cleavage site in A1A2A3-fragment under extreme hydrodynamic shear. O. Languin-Cattoën, E. Laborie, D. O. Yurkova, S. Melchionna, P. Derreumaux, A. V. Belyaev, F. Sterpone. <i>Polymers</i> 13 (22), 3912.
-                        </a>
-                    </li>
-                    <li class="article">
-                        <a href="https://doi.org/10.1021/acs.jpcb.8b08711">
-                        Three weaknesses for three perturbations: Comparing protein unfolding under shear, force, and thermal stresses. O. Languin-Cattoen, S. Melchionna, P. Derreumaux, G. Stirnemann, F. Sterpone. <i>The Journal of Physical Chemistry B</i> 122 (50), 11922—11930.
-                        </a>
-                    </li>
-            </section>
-        </section>
-    </body>
+        </main>
+   </body>
 </html>
