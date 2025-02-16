@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="test.css" />
+        <title>Olivier Languin–Cattoën - Personal Website</title>
+        <script src="jquery/jquery-3.6.1.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Olivier <span class="nobreak">Languin–Cattoën</span></h1>
+            <p>Postdoctoral Researcher</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <div class="image">
+                    <img src="graphics/olly.jpg" alt="My face">
+                </div>
+
+                <div class="content">
+                    <h1>About</h1>
+
+                    <dl>
+                        <dt>First name</dt>
+                        <dd>Olivier <a href="https://en.wikipedia.org/wiki/Help:IPA/French" title="French API pronunciation"><span class="fr_api">/olivje/</span></a></dd>
+                        <dt>Last name</dt>
+                        <dd>Languin-Cattoën <a href="https://en.wikipedia.org/wiki/Help:IPA/French" title="French API pronunciation"><span class="fr_api">/lɑ̃gɛ̃ katoɛn/</span></a></dd>
+                        <dt>Age</dt>
+                        <dd><script id="include_age" src="age.js"></script></dd>
+                    </dl>
+
+                    <p>I am a postdoctoral researcher in <a href="https://www.bussilab.org" title="Bussilab website">Giovanni Bussi's group</a>, at <a href="https://www.sissa.it/" title="Scuola Internazionale Superiore di Studi Avanzati">SISSA</a>, Trieste, Italy.</p>
+                    <p>I am interested in methodological development for the molecular modeling of biological systems, including enhanced sampling techniques for Molecular Dynamics simulations and deep learning.</p>
+                </div>
+            </section>
+
+            <section id="links">
+                <h1>Links</h1>
+                <ul>
+                    <li class="email">
+                        E-mail <span>olanguin@sissa<b>.example</b>.it</span>
+                    </li>
+                    <li class="github">
+                        <a href="https://github.com/ollyfutur">GitHub</a>
+                    </li>
+                    <li class="researchgate">
+                        <a href="https://www.researchgate.net/profile/Olivier-Languin-Cattoen">ResearchGate</a>
+                    </li>
+                    <li class="scholar">
+                        <a href="https://scholar.google.com/citations?user=ovntaA8AAAAJ">Google Scholar</a>
+                    </li>
+                    <li class="orcid">
+                        <a href="https://orcid.org/0000-0002-0486-9841">ORCID</a>
+                    </li>
+                    <li class="bussilab">
+                        <a href="https://www.bussilab.org/">Bussilab</a>
+                    </li>
+                    <li class="soundcloud">
+                        <a href="https://soundcloud.com/olly_futur">SoundCloud</a>
+                    </li>
+            </section>
+            <section id="publications">
+                <h1>Publications</h1>
+                <ul>
+                    <script id="mybib" src="mybib.js"></script>
+                </ul>
+            </section>
+        </main>
+   </body>
+</html>
