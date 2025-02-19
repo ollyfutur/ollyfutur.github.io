@@ -54,3 +54,14 @@ function getAge(date) {
 
 let age = getAge("1994-08-12");
 document.querySelector(".myage").innerHTML = `${age}`;
+
+/* Navigation */
+
+function formatNavSection(section) {
+  const title = section.querySelector("h1").innerHTML;
+  const ref = section.id;
+  return `<li><a href=#${ref}>${title}</a></li>`;
+}
+const sections = document.querySelectorAll("main > section");
+const navlist = document.querySelector("nav > ul");
+navlist.innerHTML = Array.from(sections).map(formatNavSection).join("");

@@ -296,6 +296,10 @@ section li.researchgate {
     background-image: url(graphics/icons/researchgate.svg);
 }
 
+section li.prereview {
+    background-image: url(graphics/icons/prereview.svg);
+}
+
 section li.bussilab {
     background-image: url(graphics/icons/bussilab.svg);
 }
