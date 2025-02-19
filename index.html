@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="test.css" />
+        <link rel="stylesheet" href="style.css" />
         <title>Olivier Languin–Cattoën - Personal Website</title>
-        <script src="jquery/jquery-3.6.1.min.js"></script>
+        <script src="biblio.js"></script>
+        <script src="main.js" defer></script>
     </head>
 
     <body>
@@ -36,7 +37,7 @@
                         <dt>Last name</dt>
                         <dd>Languin-Cattoën <a href="https://en.wikipedia.org/wiki/Help:IPA/French" title="French API pronunciation"><span class="fr_api">/lɑ̃gɛ̃ katoɛn/</span></a></dd>
                         <dt>Age</dt>
-                        <dd><script id="include_age" src="age.js"></script></dd>
+                        <dd class="myage"></dd>
                     </dl>
 
                     <p>I am a postdoctoral researcher in <a href="https://www.bussilab.org" title="Bussilab website">Giovanni Bussi's group</a>, at <a href="https://www.sissa.it/" title="Scuola Internazionale Superiore di Studi Avanzati">SISSA</a>, Trieste, Italy.</p>
@@ -71,8 +72,7 @@
             </section>
             <section id="publications">
                 <h1>Publications</h1>
-                <ul>
-                    <script id="mybib" src="mybib.js"></script>
+                <ul class="publist">
                 </ul>
             </section>
         </main>

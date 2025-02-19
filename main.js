@@ -35,8 +35,22 @@ function formatItem(item) {
   return `<li class="article"><a href="http://doi.org/${item.DOI}">${authors}. ${title}. ${journal}.</a></li>`;
 }
 
-const biblio = fetch('./biblio.json').then((response) => response.json());
 let items = biblio.items;
 items.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-document.write(items.map(formatItem).join(""));
+document.querySelector(".publist").innerHTML = items.map(formatItem).join("");
+
+function getAge(date) {
+  date = new Date(date);
+  const now = new Date();
+  let age = now.getFullYear() - date.getFullYear();
+  let month = date.getMonth();
+  let day = date.getDate();
+  if (now.getMonth() < month || (now.getMonth() == month) && (now.getDate() < day)) {
+    age = age - 1;
+  }
+  return age
+}
+
+let age = getAge("1994-08-12");
+document.querySelector(".myage").innerHTML = `${age}`;

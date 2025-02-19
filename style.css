@@ -58,16 +58,20 @@
     src:url('fonts/Fahkwang/Fahkwang-LightItalic.ttf');
 }
 
-/* --- Positionning --- */
-
+/* Generic stuff */
 *
 {
     margin: 0;
     padding: 0;
-    list-style: none;
     box-sizing: border-box;
+    list-style: none;
 }
 
+img
+{
+    max-width: 100%;
+    display: block;
+}
 
 a
 {
@@ -75,88 +79,106 @@ a
     color: inherit;
 }
 
-nav a
-{
-    padding-left: 1em;
-    font-family: 'Fahkwang';
-    font-weight: bold;
-}
-
-nav a:hover
-{
-    border-left: solid 2px;
-}
-
-/* body, section, header, nav
-{
-    border: solid 1px red;
-} */
-
-body
-{
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 20vh;
-
-    font-family: 'Fahkwang', Helvetica, sans-serif;
-    font-size: 0.8em;
-    font-weight: 300;
-
-    background-image: linear-gradient(rgba(20, 100, 180, 0) 0%, rgba(20, 100, 180, 0.8) 100%),
-        linear-gradient(rgba(200, 120, 180, 0) 0%, rgba(200, 120, 180, 0.5) 100%);
-    background-repeat: repeat-x, repeat-x;
-    background-attachment: fixed, scroll;
-    background-position: bottom, bottom;
-}
-
-header
-{
-    width: 40%;
-    max-width: 600px;
-    float: left;
-    position: sticky;
-    top: 20vh;
-    padding-right: 1em;
-    padding-left: 2em;
-
-    border-right: solid 2px;
-
-    text-align: right;
-}
-
 .nobreak
 {
     display: inline-block;
 }
 
-body header nav
+.fr_api
 {
-    overflow: hidden;
+    font-family: 'Noto Serif', 'Times', serif;
+    opacity: 40%;
+}
+
+/* Components */
+html
+{
+    scroll-snap-type: y proximity;
+}
+
+body
+{
+    /* background: blue; */
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 80vh;
+    background-image:
+        linear-gradient(rgba(20, 100, 180, 0) 0%, rgba(20, 100, 180, 0.8) 100%),
+        linear-gradient(rgba(200, 110, 180, 0) 0%, rgba(235, 110, 210, 0.5) 100%);
+    background-repeat: repeat-x, repeat-x;
+    background-attachment: fixed, scroll;
+    background-position: bottom, bottom;
+    font-family: 'Fahkwang', Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    display: flex;
+}
+
+body b
+{
+    font-weight: bold;
+}
+
+header
+{
+    /* background: red; */
+    max-width: 600px;
+    position: sticky;
+    top: 20vh;
+    text-align: right;
+
+    padding-left: 1em;
+    padding-right: 1em;
+    border-right: solid 2px;
+    align-self: flex-start;
+}
+
+header h1
+{
+    font-family: 'Director', serif;
+    font-weight: 300;
+}
+
+nav
+{
     max-height: 0;
+    transition: max-height 0.25s ease-in;
+    overflow: clip;
+}
+
+header:hover nav
+{
+    max-height: 10em;
     transition: max-height 0.25s ease-out;
 }
 
-body:hover header nav
+nav a
 {
-    max-height: 10em;
-    transition: max-height 0.25s ease-in;
+    padding-left: 1em;
+    font-family: 'Fahkwang';
+    font-weight: bold;
+    border-left: solid 2px rgba(0,0,0,0);
 }
 
-#main
+nav a:hover
 {
-    min-height: 2em;
-    width: 60%;
-    margin-left: 40%;
-    margin-bottom: 80vh;
-    box-sizing: border-box;
-    padding-right: 2em;
+    border-left: solid 2px rgba(0,0,0,1);
+}
+
+main
+{
+    /* background: green; */
+    margin-top: 20vh;
     padding-left: 1em;
-    text-align: justify;
+    padding-right: 1em;
+    width: 60%;
 }
 
 section
 {
-    margin-bottom: 4em;
+    scroll-margin-top: 20vh;
+    scroll-snap-align: start;
+    margin-bottom: 20vh;
 }
 
 section h1
@@ -164,6 +186,8 @@ section h1
     font-family: 'Director', serif;
     font-weight: 300;
     margin-bottom: 1em;
+    padding-top: 0.2em;
+    font-size: 1.5em;
 }
 
 section p a
@@ -220,14 +244,19 @@ section li {
 
 section li a {
     padding-right: 1em;
+    border-right: solid 2px rgba(0,0,0,0);
 }
 
 section li a:hover {
-    border-right: solid 2px;
+    border-right: solid 2px rgba(0,0,0,1);
 }
 
 section li.article {
     background-image: url(graphics/icons/article.svg);
+}
+
+section li.article emph {
+    font-weight: bold;
 }
 
 section li.email {
@@ -276,43 +305,70 @@ section li.soundcloud {
 }
 
 
-
-@media (max-width: 800px)
+@media (max-width: 600px)
 {
+    html
+    {
+        height: 100%;
+    }
 
     body
     {
+        height: 100%;
+        margin-bottom: 0vh;
+        display: flex;
+        flex-flow: column;
+        padding-right: 2em;
+        padding-left: 2em;
     }
 
     header
     {
-        float: none;
-        position: sticky;
-        top: 0px;
+        position: static;
+        margin-top: 10vh;
         width: 100%;
-        margin: auto;
-        border-bottom: solid 1px;
+        border-right: solid 0px;
+        border-bottom: solid 2px;
+        padding-bottom: 1em;
+        padding-right: 0em;
+        padding-left: 0em;
+    }
+
+    main
+    {
+        margin-left: 0%;
+        margin-top: 0;
+        width: 100%;
+        overflow: scroll;
+        flex-grow: 1;
+        scroll-snap-type: y proximity;
     }
 
     section
     {
-        min-height: 1em;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 80vw;
-        overflow: scroll;
-        border-left: solid 1px;
+        scroll-margin-top: 0vh;
     }
 }
 
-header h1
+#about
 {
-    font-family: 'Director', serif;
-    font-weight: 300;
+    display: flex;
 }
 
-.fr_api
+#about .image
 {
-    font-family: 'Noto Serif', 'Times', serif;
-    opacity: 40%;
+    order: 2;
+    flex: 0 1 10em;
+    padding-left: 1em;
+}
+
+#about .image img
+{
+    border-radius: 2px;
+}
+
+#about .content
+{
+    order: 1;
+    flex: 2 1 80%;
 }
