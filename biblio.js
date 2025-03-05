@@ -440,6 +440,354 @@ const biblio = {
       "itemKey": "M9I5XGGK",
       "libraryID": 1,
       "select": "zotero://select/library/items/M9I5XGGK"
+    },
+    {
+      "key": "SIA4HSTM",
+      "version": 4295,
+      "itemType": "journalArticle",
+      "title": "PLUMED Tutorials: A collaborative, community-driven learning ecosystem",
+      "abstractNote": "In computational physics, chemistry, and biology, the implementation of new techniques in shared and open-source software lowers barriers to entry and promotes rapid scientific progress. However, effectively training new software users presents several challenges. Common methods like direct knowledge transfer and in-person workshops are limited in reach and comprehensiveness. Furthermore, while the COVID-19 pandemic highlighted the benefits of online training, traditional online tutorials can quickly become outdated and may not cover all the software’s functionalities. To address these issues, here we introduce “PLUMED Tutorials,” a collaborative model for developing, sharing, and updating online tutorials. This initiative utilizes repository management and continuous integration to ensure compatibility with software updates. Moreover, the tutorials are interconnected to form a structured learning path and are enriched with automatic annotations to provide broader context. This paper illustrates the development, features, and advantages of PLUMED Tutorials, aiming to foster an open community for creating and sharing educational resources.",
+      "date": "2025-03-07",
+      "language": "en",
+      "shortTitle": "PLUMED Tutorials",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://pubs.aip.org/jcp/article/162/9/092501/3338242/PLUMED-Tutorials-A-collaborative-community-driven",
+      "accessDate": "2025-03-05T08:47:21Z",
+      "volume": "162",
+      "pages": "092501",
+      "publicationTitle": "The Journal of Chemical Physics",
+      "DOI": "10.1063/5.0251501",
+      "issue": "9",
+      "ISSN": "0021-9606, 1089-7690",
+      "creators": [
+        {
+          "firstName": "Gareth A.",
+          "lastName": "Tribello",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Massimiliano",
+          "lastName": "Bonomi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Giovanni",
+          "lastName": "Bussi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Carlo",
+          "lastName": "Camilloni",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Blake I.",
+          "lastName": "Armstrong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andrea",
+          "lastName": "Arsiccio",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Simone",
+          "lastName": "Aureli",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Federico",
+          "lastName": "Ballabio",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mattia",
+          "lastName": "Bernetti",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Luigi",
+          "lastName": "Bonati",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Samuel G. H.",
+          "lastName": "Brookes",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Z. Faidon",
+          "lastName": "Brotzakis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Riccardo",
+          "lastName": "Capelli",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michele",
+          "lastName": "Ceriotti",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kam-Tung",
+          "lastName": "Chan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pilar",
+          "lastName": "Cossio",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Siva",
+          "lastName": "Dasetty",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Davide",
+          "lastName": "Donadio",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bernd",
+          "lastName": "Ensing",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andrew L.",
+          "lastName": "Ferguson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Guillaume",
+          "lastName": "Fraux",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Julian D.",
+          "lastName": "Gale",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Francesco Luigi",
+          "lastName": "Gervasio",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Toni",
+          "lastName": "Giorgino",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Nicholas S. M.",
+          "lastName": "Herringer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Glen M.",
+          "lastName": "Hocky",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Samuel E.",
+          "lastName": "Hoff",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michele",
+          "lastName": "Invernizzi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Olivier",
+          "lastName": "Languin-Cattoën",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Vanessa",
+          "lastName": "Leone",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Vittorio",
+          "lastName": "Limongelli",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Olga",
+          "lastName": "Lopez-Acevedo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fabrizio",
+          "lastName": "Marinelli",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pedro",
+          "lastName": "Febrer Martinez",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matteo",
+          "lastName": "Masetti",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shams",
+          "lastName": "Mehdi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Angelos",
+          "lastName": "Michaelides",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mhd Hussein",
+          "lastName": "Murtada",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michele",
+          "lastName": "Parrinello",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pablo M.",
+          "lastName": "Piaggi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Adriana",
+          "lastName": "Pietropaolo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fabio",
+          "lastName": "Pietrucci",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Silvio",
+          "lastName": "Pipolo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Claire",
+          "lastName": "Pritchard",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Paolo",
+          "lastName": "Raiteri",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Stefano",
+          "lastName": "Raniolo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Daniele",
+          "lastName": "Rapetti",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Valerio",
+          "lastName": "Rizzi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jakub",
+          "lastName": "Rydzewski",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matteo",
+          "lastName": "Salvalaglio",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Christoph",
+          "lastName": "Schran",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Aniruddha",
+          "lastName": "Seal",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Armin",
+          "lastName": "Shayesteh Zadeh",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tomás F. D.",
+          "lastName": "Silva",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Vojtěch",
+          "lastName": "Spiwok",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Guillaume",
+          "lastName": "Stirnemann",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Daniel",
+          "lastName": "Sucerquia",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pratyush",
+          "lastName": "Tiwary",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Omar",
+          "lastName": "Valsson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michele",
+          "lastName": "Vendruscolo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gregory A.",
+          "lastName": "Voth",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andrew D.",
+          "lastName": "White",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jiangbo",
+          "lastName": "Wu",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-03-05T08:47:21Z",
+      "dateModified": "2025-03-05T08:47:21Z",
+      "uri": "http://zotero.org/users/5196077/items/SIA4HSTM",
+      "itemID": 2220,
+      "attachments": [],
+      "notes": [],
+      "citationKey": "tribello_plumed_2025",
+      "itemKey": "SIA4HSTM",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/SIA4HSTM"
     }
   ]
 }

@@ -16,6 +16,8 @@ function formatAuthors(authors) {
   authors = authors.map(formatAuthor);
   if (authors.length == 1) {
     return authors[0];
+  } else if (authors.length > 10) {
+    return authors[0] + " <i>et al</i>";
   } else {
     return authors.slice(0, -1).join(", ") + " and " + authors.slice(-1);
   }
