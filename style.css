@@ -304,6 +304,10 @@ section li.bussilab {
     background-image: url(graphics/icons/bussilab.svg);
 }
 
+section li.bluesky {
+    background-image: url(graphics/icons/bluesky.svg);
+}
+
 section li.soundcloud {
     background-image: url(graphics/icons/soundcloud.svg);
 }
